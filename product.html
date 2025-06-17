@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Products</title>
+  <link rel="stylesheet" href="./product.css" />
+</head>
+<body>
+  <header>
+    <div class="navcontainer">
+      <div class="navbar">
+        <ul>
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./product.html">Product</a></li>
+          <li style="margin-left:auto;">
+            <a href="#" id="cart-button">Card (<span id="cart-count">0</span>)</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </header>
+
+  <div class="maincontainer">
+    <!-- Product 1 -->
+    <div class="productcontainer" data-name="Samsung Galaxy S24" data-price="45000">
+      <div class="productimage">
+        <img src="https://m.media-amazon.com/images/I/51hqXIAVXAL._SX679_.jpg" alt="Samsung Galaxy S24" />
+      </div>
+      <div class="productname">Samsung Galaxy S24</div>
+      <div class="productprice">₹ 45,000</div>
+      <div class="detailbtn">
+        <a href="https://www.amazon.in/" target="_blank">More Details</a>
+      </div>
+      <div class="cartbtn">
+        <button class="add-to-cart-btn">Add to Card</button>
+      </div>
+    </div>
+
+    <!-- Product 2 -->
+    <div class="productcontainer" data-name="iPhone" data-price="45000">
+      <div class="productimage">
+        <img src="https://m.media-amazon.com/images/I/61nPiOOv9BL._SX679_.jpg" alt="iPhone" />
+      </div>
+      <div class="productname">iPhone</div>
+      <div class="productprice">₹ 45,000</div>
+      <div class="detailbtn">
+        <a href="https://www.amazon.in/" target="_blank">More Details</a>
+      </div>
+      <div class="cartbtn">
+        <button class="add-to-cart-btn">Add to Card</button>
+      </div>
+    </div>
+
+    <!-- Product 3 -->
+    <div class="productcontainer" data-name="Dell Inspiron" data-price="40000">
+      <div class="productimage">
+        <img src="https://m.media-amazon.com/images/I/71vFKBpKakL._SX679_.jpg" alt="Dell Inspiron" />
+      </div>
+      <div class="productname">Dell Inspiron</div>
+      <div class="productprice">₹ 40,000</div>
+      <div class="detailbtn">
+        <a href="https://www.amazon.in/" target="_blank">More Details</a>
+      </div>
+      <div class="cartbtn">
+        <button class="add-to-cart-btn">Add to Card</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Cart Modal -->
+  <div id="cart-modal" class="modal">
+    <div class="modal-content">
+      <span id="close-cart" class="close">&times;</span>
+      <h2>Your Card</h2>
+      <div id="cart-items"></div>
+      <div id="total-price" class="total-price"></div>
+      <button id="clear-cart">Clear Card</button>
+    </div>
+  </div>
+
+  <script src="./app.js"></script>
+</body>
+</html>

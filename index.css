@@ -1,0 +1,135 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Navigation Bar */
+.navbar {
+    display: flex;
+    justify-content: center;
+    background-color: #333;
+    padding: 15px 10px;
+}
+
+.navbar ul {
+    display: flex;
+    gap: 25px;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0;
+}
+
+.navbar li {
+    background-color: lightslategray;
+    border-radius: 10px;
+    padding: 8px 16px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.navbar li:hover {
+    background-color: black;
+    transform: translateY(3px);
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+/* Product Container */
+.maincontainer {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.productcontainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 400px;
+    width: 100%;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #f3f3f3;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.productimage img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.productname {
+    color: lightblue;
+    font-size: 24px;
+    margin: 15px 0 5px;
+}
+
+.productprice {
+    font-size: 20px;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.detailbtn a {
+    text-decoration: none;
+    color: white;
+    background-color: #007bff;
+    padding: 10px 20px;
+    border-radius: 6px;
+    transition: background-color 0.3s ease;
+}
+
+.detailbtn a:hover {
+    background-color: #0056b3;
+}
+
+/* ✅ Responsive Design */
+@media (max-width: 768px) {
+    .navbar ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .navbar li {
+        width: 100%;
+        text-align: center;
+    }
+
+    .maincontainer {
+        padding: 10px;
+    }
+
+    .productcontainer {
+        max-width: 90%;
+    }
+}
+
+@media (max-width: 480px) {
+    .productname {
+        font-size: 20px;
+    }
+
+    .productprice {
+        font-size: 18px;
+    }
+
+    .detailbtn a {
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+    .maincontainer{
+        /* border: 2px solid red; */
+        flex-direction: column;
+    }
+}
